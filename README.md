@@ -2,6 +2,8 @@
 
 Repo for cataloging the behavior of widgets in Thebe, libretexts, and on jupyterhub. Reference to [this issue](https://github.com/LibreTexts/metalc/issues/136#issue-575899944).
 
+This repository was migrated over from the now archived [sandertyu/widgetstuffs](https://github.com/sandertyu/widgetstuffs) repository.
+
 # How to use
 
 Use `python3 -m http.server` within the `Thebe/` directory and navigate to localhost:8000 to see the Thebe results. Change the url to the different html pages within the `Thebe/` directory or use the directory listing to view them.
