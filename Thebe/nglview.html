@@ -1,0 +1,44 @@
+'<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>thebelab widget testing</title>
+
+  <!-- script that allows the line plots to be displayed, otherwise it gives an error -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+
+  <!-- Thebe configuration !-->
+  <script type="text/x-thebe-config">
+    {
+      binderOptions: {
+        repo: "hainm/nglview-binder",
+        ref: "2.0.1",
+      },
+      kernelOptions: {
+        name: "python3",
+      },
+      requestKernel: true,
+      bootstrap: true,
+    }
+  </script>
+
+  <!-- thebelab javascript bundle -->
+  <script src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+
+</head>
+
+<body>
+
+  <!-- source from https://github.com/nglviewer/nglview using trajectory_player.ipynb -->
+  <pre data-executable="true" data-language="python">
+import nglview as nv
+import pytraj as pt
+    
+traj = pt.datafiles.load_trpcage()[:]
+view = nv.show_pytraj(traj)
+view
+  </pre>
+
+</body>
+
+</html>

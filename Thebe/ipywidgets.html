@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>thebelab widget testing</title>
+
+  <!-- script that allows the line plots to be displayed, otherwise it gives an error -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+
+  <!-- Thebe configuration !-->
+  <script type="text/x-thebe-config">
+    {
+      binderOptions: {
+        repo: "LibreTexts/default-env",
+        ref: "2.0.1",
+        binderUrl: "https://binder.libretexts.org"
+      },
+      kernelOptions: {
+        name: "python3",
+      },
+      requestKernel: true,
+      bootstrap: true,
+    }
+  </script>
+
+  <!-- thebelab javascript bundle -->
+  <script src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+
+</head>
+
+<body>
+
+  <!-- source from https://github.com/jupyter-widgets/ipywidgets/blob/6be18d9b75353f7b4a1c328c6ea06d8959f978f6/docs/source/examples/Using%20Interact.ipynb -->
+  <pre data-executable="true" data-language="python">
+from __future__ import print_function
+from ipywidgets import interact, interactive, fixed, interact_manual
+import ipywidgets as widgets
+  </pre>
+
+  <pre data-executable="true" data-language="python">
+def f(x):
+    return x
+    </pre>
+
+  <pre data-executable="true" data-language="python">
+interact(f, x=10);
+    </pre>
+
+</body>
+
+</html>

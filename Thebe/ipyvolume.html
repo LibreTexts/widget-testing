@@ -1,0 +1,49 @@
+'<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>thebelab widget testing</title>
+
+  <!-- script that allows the line plots to be displayed, otherwise it gives an error -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+
+  <!-- Thebe configuration !-->
+  <script type="text/x-thebe-config">
+    {
+      binderOptions: {
+        repo: "LibreTexts/default-env",
+        ref: "2.0.1",
+        binderUrl: "https://binder.libretexts.org"
+      },
+      kernelOptions: {
+        name: "python3",
+      },
+      requestKernel: true,
+      bootstrap: true,
+    }
+  </script>
+
+  <!-- thebelab javascript bundle -->
+  <script src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+
+</head>
+
+<body>
+
+  <!-- source from https://ipyvolume.readthedocs.io/en/latest/?badge=latest -->
+  <pre data-executable="true" data-language="python">
+import numpy as np
+import ipyvolume as ipv
+V = np.zeros((128,128,128)) # our 3d array
+# outer box
+V[30:-30,30:-30,30:-30] = 0.75
+V[35:-35,35:-35,35:-35] = 0.0
+# inner box
+V[50:-50,50:-50,50:-50] = 0.25
+V[55:-55,55:-55,55:-55] = 0.0
+ipv.quickvolshow(V, level=[0.25, 0.75], opacity=0.03, level_width=0.1, data_min=0, data_max=1)
+  </pre>
+
+</body>
+
+</html>

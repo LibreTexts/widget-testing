@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>thebelab widget testing</title>
+
+  <!-- script that allows the line plots to be displayed, otherwise it gives an error -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+
+  <!-- Thebe configuration !-->
+  <script type="text/x-thebe-config">
+    {
+      binderOptions: {
+        repo: "LibreTexts/default-env",
+        ref: "2.0.1",
+        binderUrl: "https://binder.libretexts.org"
+      },
+      kernelOptions: {
+        name: "python3",
+      },
+      requestKernel: true,
+      bootstrap: true,
+    }
+  </script>
+
+  <!-- thebelab javascript bundle -->
+  <script src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+
+</head>
+
+<body>
+
+  <!-- source from https://github.com/jupyter-widgets/pythreejs/blob/master/examples/Examples.ipynb -->
+  <pre data-executable="true" data-language="python">
+from pythreejs import *
+from IPython.display import display
+      
+# Materials
+mat = MeshStandardMaterial(color='#ff0000')
+mat_green = MeshStandardMaterial(color='#00ff00')
+mat_blue = MeshStandardMaterial(color='#0000ff')
+      
+# Geometries
+torus = TorusGeometry(radius=12, tube=3, radialSegments=16, tubularSegments=100)
+sphere = SphereGeometry(radius=12, _flat=True)
+      
+bufferSphere = SphereBufferGeometry(radius=12, _flat=True)
+bufferTorus = TorusBufferGeometry(radius=12, tube=3, radialSegments=16, tubularSegments=100)
+      
+sphere
+bufferSphere
+  </pre>
+
+</body>
+
+</html>

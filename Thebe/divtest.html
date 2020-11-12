@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>thebelab widget testing</title>
+
+  <!-- script that allows the line plots to be displayed, otherwise it gives an error -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+
+  <!-- Thebe configuration !-->
+  <script type="text/x-thebe-config">
+    {
+      binderOptions: {
+        repo: "LibreTexts/default-env",
+        ref: "2.0.1",
+        binderUrl: "https://binder.libretexts.org",
+        predefinedOutput: true,
+      },
+      kernelOptions: {
+        name: "python3",
+      },
+      requestKernel: true,
+      bootstrap: true,
+    }
+  </script>
+
+  <!-- thebelab javascript bundle -->
+  <script src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+
+</head>
+
+<body>
+
+  <!-- source from https://github.com/jupyter-widgets/ipyleaflet/blob/master/examples/Heatmap.ipynb -->
+  <div class="thebelab-widget">
+  <pre data-executable="true" data-language="python">
+from ipyleaflet import Map, Heatmap
+from random import uniform
+import time
+
+def create_random_data(length):
+    "Return a list of some random lat/lon/value triples."
+    return [[uniform(-80, 80),
+             uniform(-180, 180),
+             uniform(0, 1000)] for i in range(length)]
+
+m = Map(center=[0, 0], zoom=2)
+m
+  </pre>
+
+  <div data-output="true">
+      <pre>
+      &nbsp;
+      </pre>
+  </div>
+  </div>
+
+  <div class="thebelab-widget">
+  <pre data-executable="true" data-language="python">
+heat = Heatmap(locations=create_random_data(1000), radius=20, blur=10)
+m.add_layer(heat)
+  </pre>
+
+  <div data-output="true">
+      <pre>
+      &nbsp;
+      </pre>
+  </div>
+  </div>
+
+  <div class="thebelab-widget">
+  <pre data-executable="true" data-language="python">
+for i in range(100):
+    heat.locations = create_random_data(1000)
+    time.sleep(0.1)
+  </pre>
+
+  <div data-output="true">
+      <pre>
+      &nbsp;
+      </pre>
+  </div>
+  </div>
+
+</body>
+
+</html>

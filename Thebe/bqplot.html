@@ -1,0 +1,53 @@
+'<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>thebelab widget testing</title>
+
+  <!-- script that allows the line plots to be displayed, otherwise it gives an error -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+
+  <!-- script for awesome fonts 4.0 needed for navigation buttons -->
+  <script src="https://use.fontawesome.com/3e02a3c909.js"></script>
+
+  <!-- Thebe configuration !-->
+  <script type="text/x-thebe-config">
+    {
+      binderOptions: {
+        repo: "LibreTexts/default-env",
+        ref: "2.0.1",
+        binderUrl: "https://binder.libretexts.org"
+      },
+      kernelOptions: {
+        name: "python3",
+      },
+      requestKernel: true,
+      bootstrap: true,
+    }
+  </script>
+
+  <!-- thebelab javascript bundle -->
+  <script src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+
+</head>
+
+<body>
+
+  <!-- source from https://github.com/bqplot/bqplot/blob/bd14256b5bf29c32ac363982c8e0c3bf8929a7f2/examples/Introduction.ipynb -->
+  <pre data-executable="true" data-language="python">
+import numpy as np
+from bqplot import pyplot as plt
+
+size = 100
+np.random.seed(0)
+x_data = np.arange(size)
+y_data = np.cumsum(np.random.randn(size)  * 100.0)
+
+plt.figure(title='My First Plot')
+plt.plot(x_data, y_data)
+plt.show()
+  </pre>
+
+</body>
+
+</html>

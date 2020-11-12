@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>thebelab widget testing</title>
+
+  <!-- script that allows the line plots to be displayed, otherwise it gives an error -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+
+  <!-- script for awesome fonts 4.0 needed for navigation buttons -->
+  <script src="https://use.fontawesome.com/3e02a3c909.js"></script>
+
+  <!-- Thebe configuration !-->
+  <script type="text/x-thebe-config">
+    {
+      binderOptions: {
+        repo: "LibreTexts/default-env",
+        ref: "2.0.1",
+        binderUrl: "https://binder.libretexts.org"
+      },
+      kernelOptions: {
+        name: "python3",
+      },
+      requestKernel: true,
+      bootstrap: true,
+    }
+  </script>
+
+  <!-- thebelab javascript bundle -->
+  <script src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+
+</head>
+
+<body>
+
+  <h1>2D Plot</h1>
+  <!-- source from https://github.com/matplotlib/ipympl/blob/master/examples/ipympl.ipynb -->
+  <pre data-executable="true" data-language="python">
+%matplotlib widget
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+fig.canvas.layout.width = '7in'
+fig.canvas.layout.height= '5in'
+ax.plot([1,2,3], [4,5,3])
+  </pre>
+
+  <h1>3D Plot</h1>
+  <pre data-executable="true" data-language="python">
+%matplotlib widget
+
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import axes3d
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+X, Y, Z = axes3d.get_test_data(0.05)
+ax.plot_wireframe(X, Y, Z, rstride=10, cstride=10)
+plt.show()
+</pre>
+
+</body>
+
+</html>

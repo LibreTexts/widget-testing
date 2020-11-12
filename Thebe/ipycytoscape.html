@@ -1,0 +1,81 @@
+'<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>thebelab widget testing</title>
+
+  <!-- script that allows the line plots to be displayed, otherwise it gives an error -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+
+  <!-- Thebe configuration !-->
+  <script type="text/x-thebe-config">
+    {
+      binderOptions: {
+        repo: "LibreTexts/default-env",
+        ref: "2.0.1",
+        binderUrl: "https://binder.libretexts.org"
+      },
+      kernelOptions: {
+        name: "python3",
+      },
+      requestKernel: true,
+      bootstrap: true,
+    }
+  </script>
+
+  <!-- thebelab javascript bundle -->
+  <script src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+
+</head>
+
+<body>
+
+  <!-- source from https://github.com/QuantStack/ipycytoscape/blob/master/examples/Text%20on%20node.ipynb -->
+  <pre data-executable="true" data-language="python">
+import ipycytoscape
+data = {
+  'nodes': [
+      { 'data': { 'id': 'desktop', 'name': 'Cytoscape', 'href': 'http://cytoscape.org' } },
+      { 'data': { 'id': 'a', 'name': 'Grid', 'href': 'http://cytoscape.org' } },
+      { 'data': { 'id': 'b', 'name': 'Cola', 'href': 'http://cytoscape.org' } },
+      { 'data': { 'id': 'c', 'name': 'Popper', 'href': 'http://cytoscape.org' } },
+      { 'data': { 'id': 'js', 'name': 'Cytoscape.js', 'href': 'http://js.cytoscape.org' } }
+  ],
+  'edges': [
+      {'data': { 'source': 'desktop', 'target': 'js' }},
+      {'data': { 'source': 'a', 'target': 'b' }},
+      {'data': { 'source': 'a', 'target': 'c' }},
+      {'data': { 'source': 'b', 'target': 'c' }},
+      {'data': { 'source': 'js', 'target': 'b' }}
+  ]
+}
+cytoscapeobj = ipycytoscape.CytoscapeWidget()
+cytoscapeobj.graph.add_graph_from_json(data)
+cytoscapeobj.set_style([{
+  'selector': 'node',
+  'css': {
+      'content': 'data(name)',
+      'text-valign': 'center',
+      'color': 'white',
+      'text-outline-width': 2,
+      'text-outline-color': 'green',
+      'background-color': 'green'
+  }
+  },
+  {
+  'selector': ':selected',
+  'css': {
+      'background-color': 'black',
+      'line-color': 'black',
+      'target-arrow-color': 'black',
+      'source-arrow-color': 'black',
+      'text-outline-color': 'black'
+  }}
+  ])
+cytoscapeobj
+
+  </pre>
+
+</body>
+
+</html>
