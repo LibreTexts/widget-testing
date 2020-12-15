@@ -19,7 +19,7 @@ Use `python3 -m http.server` within the `Thebe/` directory and navigate to local
 |ipywidgets|`interact()` does not display the widget. Some widgets work on their own (BoundedIntText), and others do not (IntSlider).|Works Properly|`interact()` does not display the widget, same error as Thebe||
 |bqplot|Needs `Awesome Font` and pan zoom button to move the plot around does not work. Otherwise seems to work properly|Works properly|Pan zoom button does not work, but save button does, same as Thebe|Plots do not show|
 |ipyvolume|figure displays, but sliders and buttons do not render properly, also gives a python error|gives same error as ipyvolume-image, very buggy in general but does "work"|buttons do render but sliders do not, same issues as Thebe (not installed)||
-|nglview|buttons do not display so the animation cannot be run, otherwise works properly|Works properly|Does not display animation slider, but everything (including animation) works properly otherwise (not installed)||
+|nglview|buttons do not display so the animation cannot be run, otherwise works properly. **Note:** This issue seems to be solved in a later version of Thebe. |Works properly|Does not display animation slider, but everything (including animation) works properly otherwise (not installed)||
 |ipycytoscape|Works properly|Works properly|Works properly (not installed)||
 |ipygany|Works properly except for ipywidget sliders do not show (if you choose to use them with [thresholds, for example](https://ipygany.readthedocs.io/en/latest/api_reference/threshold.html)||||
 |plotly|Works properly|Works properly|Plots do not display||
