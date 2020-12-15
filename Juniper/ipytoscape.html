@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>juniper widget testing</title>
+
+
+
+</head>
+
+<body>
+
+  <!-- source from https://github.com/jupyter-widgets/ipyleaflet/blob/master/examples/Heatmap.ipynb -->
+<pre data-executable>
+import ipycytoscape
+data = {
+  'nodes': [
+      { 'data': { 'id': 'desktop', 'name': 'Cytoscape', 'href': 'http://cytoscape.org' } },
+      { 'data': { 'id': 'a', 'name': 'Grid', 'href': 'http://cytoscape.org' } },
+      { 'data': { 'id': 'b', 'name': 'Cola', 'href': 'http://cytoscape.org' } },
+      { 'data': { 'id': 'c', 'name': 'Popper', 'href': 'http://cytoscape.org' } },
+      { 'data': { 'id': 'js', 'name': 'Cytoscape.js', 'href': 'http://js.cytoscape.org' } }
+  ],
+  'edges': [
+      {'data': { 'source': 'desktop', 'target': 'js' }},
+      {'data': { 'source': 'a', 'target': 'b' }},
+      {'data': { 'source': 'a', 'target': 'c' }},
+      {'data': { 'source': 'b', 'target': 'c' }},
+      {'data': { 'source': 'js', 'target': 'b' }}
+  ]
+}
+cytoscapeobj = ipycytoscape.CytoscapeWidget()
+cytoscapeobj.graph.add_graph_from_json(data)
+cytoscapeobj.set_style([{
+  'selector': 'node',
+  'css': {
+      'content': 'data(name)',
+      'text-valign': 'center',
+      'color': 'white',
+      'text-outline-width': 2,
+      'text-outline-color': 'green',
+      'background-color': 'green'
+  }
+  },
+  {
+  'selector': ':selected',
+  'css': {
+      'background-color': 'black',
+      'line-color': 'black',
+      'target-arrow-color': 'black',
+      'source-arrow-color': 'black',
+      'text-outline-color': 'black'
+  }}
+  ])
+cytoscapeobj
+</pre>
+    <!-- script that allows the line plots to be displayed, otherwise it gives an error -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+
+    <!-- script for awesome fonts 4.0 needed for navigation buttons -->
+    <script src="https://use.fontawesome.com/3e02a3c909.js"></script>
+  <!-- Juniper script and configuration -->
+  <script src="./juniper.min.js"></script>
+  <!-- <script src="https://unpkg.com/juniper-js@0.1.0/dist/juniper.min.js"></script> -->
+  <script>new Juniper({
+    repo: 'LibreTexts/default-env',
+    url: 'https://binder.libretexts.org',
+    branch: '2.0.1',
+  })
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>thebelab widget testing</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+   <!-- <script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.2.3.min.js"></script>
+   <script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.2.3.min.js"></script>
+   <script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.2.3.min.js"></script>
+   <script src="https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.2.3.min.js"></script> -->
+
+   <script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js"></script>
+   <script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.1.1.min.js"></script>
+   <script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.1.1.min.js"></script>
+   <script src="https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.1.1.min.js"></script>
+   <script type="text/x-thebe-config">
+     {
+       requestKernel: true,
+       binderOptions: {
+         repo: "LibreTexts/default-env",
+         ref: "2.0",
+         binderUrl: "https://binder.libretexts.org",
+         repoProvider: "github",
+       },
+       requestKernel: true,
+       bootstrap: true,
+     }
+   </script>
+   <script src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+
+
+  </head>
+
+  <body>
+
+    <!-- Example from bokeh-notebooks: https://github.com/bokeh/bokeh-notebooks/blob/main/quickstart/quickstart.ipynb -->
+   <pre data-executable="true" data-language="python">
+from bokeh.plotting import figure 
+from bokeh.io import output_notebook, show
+   </pre>
+
+   <pre data-executable="true" data-language="python">
+output_notebook()
+  </pre>
+
+  <pre data-executable="true" data-language="python">
+from numpy import cos, linspace
+x = linspace(-6, 6, 100)
+y = cos(x)
+  </pre>
+
+  <pre data-executable="true" data-language="python">
+p = figure(width=500, height=500)
+p.circle(x, y, size=7, color="firebrick", alpha=0.5)
+show(p)
+  </pre>
+
+  </body>
+
+  </html>

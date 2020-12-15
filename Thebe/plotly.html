@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>thebelab widget testing</title>
+
+  <!-- script that allows the line plots to be displayed, otherwise it gives an error -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+
+  <!-- script for awesome fonts 4.0 needed for navigation buttons -->
+  <!-- <script src="https://use.fontawesome.com/3e02a3c909.js"></script> -->
+
+  <!-- Thebe configuration !-->
+  <script type="text/x-thebe-config">
+    {
+      binderOptions: {
+        repo: "LibreTexts/default-env",
+        ref: "2.1.1",
+        binderUrl: "https://binder.libretexts.org"
+      },
+      kernelOptions: {
+        name: "python3",
+      },
+      requestKernel: true,
+      bootstrap: true,
+    }
+  </script>
+
+  <!-- thebelab javascript bundle -->
+  <script src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+
+</head>
+
+<body>
+
+  <!-- source from https://plotly.com/python/renderers/ -->
+  <pre data-executable="true" data-language="python">
+import plotly.graph_objects as go
+fig = go.Figure(
+    data=[go.Bar(y=[2, 1, 3])],
+    layout_title_text="A Figure Displayed with fig.show()"
+)
+fig.show()
+  </pre>
+
+  <!--source: https://plotly.com/python/bubble-charts/-->
+  <pre data-executable="true" data-language="python">
+import plotly.express as px
+df = px.data.gapminder()
+
+fig = px.scatter(df.query("year==2007"), x="gdpPercap", y="lifeExp",
+            size="pop", color="continent",
+                  hover_name="country", log_x=True, size_max=60)
+fig.show()
+</pre>
+
+</body>
+
+</html>

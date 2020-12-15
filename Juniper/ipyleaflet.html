@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>juniper widget testing</title>
+
+  <!-- script that allows the line plots to be displayed, otherwise it gives an error -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- source from https://github.com/jupyter-widgets/ipyleaflet/blob/master/examples/Heatmap.ipynb -->
+  <pre data-executable>
+from ipyleaflet import Map, Heatmap
+from random import uniform
+import time
+
+def create_random_data(length):
+    "Return a list of some random lat/lon/value triples."
+    return [[uniform(-80, 80),
+             uniform(-180, 180),
+             uniform(0, 1000)] for i in range(length)]
+
+m = Map(center=[0, 0], zoom=2)
+m
+  </pre>
+
+  <pre data-executable>
+heat = Heatmap(locations=create_random_data(1000), radius=20, blur=10)
+m.add_layer(heat)
+    </pre>
+
+  <pre data-executable>
+for i in range(100):
+    heat.locations = create_random_data(1000)
+    time.sleep(0.1)
+    </pre>
+
+    
+  <!-- Juniper script and configuration -->
+  <script src="./juniper.min.js"></script>
+  <!-- <script src="https://unpkg.com/juniper-js@0.1.0/dist/juniper.min.js"></script> -->
+  <script>new Juniper({
+    repo: 'LibreTexts/default-env',
+    url: 'https://binder.libretexts.org',
+    branch: '2.0.1',
+  })
+  </script>
+</body>
+
+</html>
