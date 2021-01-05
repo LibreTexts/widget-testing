@@ -10,19 +10,19 @@ Use `python3 -m http.server` within the `Thebe/` directory and navigate to local
 
 # Checklist
 
-|Widget|Thebe|JupyterHub|Libretexts|Juniper
-|-|-|-|-|-|
-|bokeh|Does not display any output, says "JavaScript output is disabled in JupyterLab"|Works properly|Does not display any output, says "JavaScript output is disabled in JupyterLab" (same as Thebe)||
-|ipympl|Works properly, needs some handlers and `Awesome Font`|Works properly|Works properly||
-|ipyleaflet|Works properly|Works properly|Displays, but cells cannot communicate as seen in heatmap example (this is a limitation of current CKeditor plugin)|Map does not show|
-|pythreejs|Works properly|Works properly|Works properly (heavily limited by lack of cell communication)||
-|ipywidgets|`interact()` does not display the widget. Some widgets work on their own (BoundedIntText), and others do not (IntSlider).|Works Properly|`interact()` does not display the widget, same error as Thebe||
-|bqplot|Needs `Awesome Font` and pan zoom button to move the plot around does not work. Otherwise seems to work properly|Works properly|Pan zoom button does not work, but save button does, same as Thebe|Plots do not show|
-|ipyvolume|figure displays, but sliders and buttons do not render properly, also gives a python error|gives same error as ipyvolume-image, very buggy in general but does "work"|buttons do render but sliders do not, same issues as Thebe (not installed)||
-|nglview|buttons do not display so the animation cannot be run, otherwise works properly. **Note:** This issue seems to be solved in a later version of Thebe. |Works properly|Does not display animation slider, but everything (including animation) works properly otherwise (not installed)||
-|ipycytoscape|Works properly|Works properly|Works properly (not installed)||
-|ipygany|Works properly except for ipywidget sliders do not show (if you choose to use them with [thresholds, for example](https://ipygany.readthedocs.io/en/latest/api_reference/threshold.html)||||
-|plotly|Works properly|Works properly|Plots do not display||
+|Widget|Thebe|JupyterHub|Libretexts|
+|-|-|-|-|
+|bokeh|Does not display any output, says "JavaScript output is disabled in JupyterLab"|Works properly|Does not display any output, says "JavaScript output is disabled in JupyterLab" (same as Thebe)|
+|ipympl|Works properly, needs some handlers and `Awesome Font`|Works properly|Works properly|
+|ipyleaflet|Works properly|Works properly|Displays, but cells cannot communicate as seen in heatmap example (this is a limitation of current CKeditor plugin)|
+|pythreejs|Works properly|Works properly|Works properly (heavily limited by lack of cell communication)|
+|ipywidgets|`interact()` does not display the widget. Some widgets work on their own (BoundedIntText), and others do not (IntSlider).|Works Properly|`interact()` does not display the widget, same error as Thebe|
+|bqplot|Needs `Awesome Font` and pan zoom button to move the plot around does not work. Otherwise seems to work properly|Works properly|Pan zoom button does not work, but save button does, same as Thebe|
+|ipyvolume|figure displays, but sliders and buttons do not render properly, also gives a python error|gives same error as ipyvolume-image, very buggy in general but does "work"|buttons do render but sliders do not, same issues as Thebe (not installed)|
+|nglview|buttons do not display so the animation cannot be run, otherwise works properly. **Note:** This issue seems to be solved in a later version of Thebe. |Works properly|Does not display animation slider, but everything (including animation) works properly otherwise (not installed)|
+|ipycytoscape|Works properly|Works properly|Works properly (not installed)|
+|ipygany|Works properly except for ipywidget sliders do not show (if you choose to use them with [thresholds, for example](https://ipygany.readthedocs.io/en/latest/api_reference/threshold.html)|||
+|plotly|Works properly|Works properly|Plots do not display|
 
 # Screenshots for widgets with bugs
 
@@ -30,9 +30,9 @@ Use `python3 -m http.server` within the `Thebe/` directory and navigate to local
 
 ### In Thebe (works properly)
 ![ipyleaflet in Thebe](/screenshots/ipyleaflet-thebe.png)
-### In Libretexts (cells cannot communicate, so the heatmap and timelapse do not work)
+### In Libretexts (cells cannot communicate, so the heatmap and timelapse do not work)*
 ![ipyleaflet in libretexts](/screenshots/ipyleaflet-libre.png)
-
+*may be a different issue since the heatmap and timelapse do not work even if in the same code cell.
 ## ipywidgets
 
 ### In Thebe (`interact()` does not work, and some widgets give an error when trying to display)
