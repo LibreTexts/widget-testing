@@ -20,29 +20,81 @@ Known bugs;
 
   - Displays "Javascript output is disabled in JupyterLab" when the widgets are ran
 
-Suggested debugging procedures;
+Debugging procedures;
 
   - Test `bokeh.html` using different binder repositories
     - ~~[default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)~~
-    - [binder-examples/bokeh](https://github.com/binder-examples/bokeh)
+    - ~~[binder-examples/bokeh](https://github.com/binder-examples/bokeh)~~
 
-  - [ipywidgets](https://github.com/jupyter-widgets/ipywidgets)
-    - Some widgets work and others don't, `interact()` function does not work at all
-  - [bqplot](https://github.com/bqplot/bqplot)
-    - [PR to fix on Thebe](https://github.com/executablebooks/thebe/pull/330), buttons were not working properly
-  - [ipyvolume](https://github.com/maartenbreddels/ipyvolume)
-    - Sliders and buttons do not render properly, very buggy in general
-  - [nglview](https://github.com/nglviewer/nglview)
-    - Binder image to run the widgets no longer builds, need to retest. Questionably worked before
-  - [ipygany](https://github.com/QuantStack/ipygany)
-    - ipywidget sliders do not show (if you choose to use them with [thresholds, for example](https://ipygany.readthedocs.io/en/latest/api_reference/threshold.html))
+### [ipywidgets](https://github.com/jupyter-widgets/ipywidgets)
+
+Known bugs;
+
+  - Some widgets work and others don't, `interact()` function does not work at all
+
+Debugging procedures;
+
+  - TODO
+
+### [bqplot](https://github.com/bqplot/bqplot)
+
+Known bugs;
+
+  - [PR to fix on Thebe](https://github.com/executablebooks/thebe/pull/330), buttons were not working properly
+
+### [ipyvolume](https://github.com/maartenbreddels/ipyvolume)
+
+Known bugs;
+
+  - Sliders and buttons do not render properly, very buggy in general
+
+Debugging procedures;
+
+  - TODO
+
+### [nglview](https://github.com/nglviewer/nglview)
+
+Known bugs;
+
+  - Binder image to run the widgets no longer builds, need to retest. Questionably worked before
+
+Debugging procedures;
+
+  - TODO
+
+### [ipygany](https://github.com/QuantStack/ipygany)
+
+Known bugs;
+
+  - ipywidget sliders do not show (if you choose to use them with [thresholds, for example](https://ipygany.readthedocs.io/en/latest/api_reference/threshold.html))
+
+Debugging procedures;
+
+  - TODO
 
 ## Widgets with problems on Libretexts
 
-These widgets work properly in Thebe but not so well on Libretexts due to limitations of the CKEditor Binder Plugin. Cells cannot retroactively change the output of another cell in CKEditor Binder Plugin, so these widgets are severely limited. See [this issue for more info](https://github.com/LibreTexts/ckeditor-binder-plugin/issues/107).
+These widgets work properly in Thebe but not so well on Libretexts due to limitations of the CKEditor Binder Plugin. Cells cannot retroactively change the output of another cell in CKEditor Binder Plugin, so these widgets are severely limited. See [this issue for more info](https://github.com/LibreTexts/ckeditor-binder-plugin/issues/107). Theoretically this issue effects all widgets on Libretexts, but these ones seem most impacted due to how they are used.
 
-  - [ipyleaflet](https://github.com/jupyter-widgets/ipyleaflet)
-  - [pythreejs](https://github.com/jupyter-widgets/pythreejs)
+### [ipyleaflet](https://github.com/jupyter-widgets/ipyleaflet)
+
+Known bugs;
+
+  - For instance, if you try to add a heatmap to the output of an earlier cell, it will not cause any change
+
+Debugging procedures;
+
+  - TODO
+
+### [pythreejs](https://github.com/jupyter-widgets/pythreejs)
+
+Known bugs;
+ 
+ - Same as ipyleaflet
+
+Debugging procedures;
+
+  - TODO
 
 ## Widgets that work or have been fixed
 
