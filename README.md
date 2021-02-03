@@ -98,9 +98,11 @@ Debugging procedures;
 
 ## Widgets that work or have been fixed
 
-  - [ipympl](https://github.com/matplotlib/ipympl)
-  - [ipycytoscape](https://github.com/Quantstack/ipycytoscape)
-  - [plotly](https://github.com/plotly/plotly.py)
+### [ipympl](https://github.com/matplotlib/ipympl)
+
+### [ipycytoscape](https://github.com/Quantstack/ipycytoscape)
+
+### [plotly](https://github.com/plotly/plotly.py)
 
 # Screenshots for widgets with bugs
 
