@@ -8,7 +8,7 @@ This repository was migrated over from the now archived [sandertyu/widgetstuffs]
 
 Use `python -m http.server` (`python3` if `python` is an alias for python v2) within the `Thebe/` directory and navigate to localhost:8000 in your web browser to see the Thebe results. Change the url to the different html pages within the `Thebe/` directory or use the directory listing to view them.
 
-# Checklist
+# Widget Status
 
 ## Widgets with Thebe errors
 
