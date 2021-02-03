@@ -14,14 +14,17 @@ Use `python -m http.server` (`python3` if `python` is an alias for python v2) wi
 
 Widgets with errors in Thebe will have errors on Libretexts because CKEditor Binder Plugin uses Thebe to insert code cells into the HTML webpage.
 
-  - [Bokeh](https://github.com/bokeh/bokeh)
-    - Displays "Javascript output is disabled in JupyterLab" when the widgets are ran
+### [Bokeh](https://github.com/bokeh/bokeh)
 
-    Suggested debugging procedures;
+Known bugs;
 
-      - Test `bokeh.html` using different binder repositories
-        - ~~[default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)~~
-        - [binder-examples/bokeh](https://github.com/binder-examples/bokeh)
+  - Displays "Javascript output is disabled in JupyterLab" when the widgets are ran
+
+Suggested debugging procedures;
+
+  - Test `bokeh.html` using different binder repositories
+    - ~~[default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)~~
+    - [binder-examples/bokeh](https://github.com/binder-examples/bokeh)
 
   - [ipywidgets](https://github.com/jupyter-widgets/ipywidgets)
     - Some widgets work and others don't, `interact()` function does not work at all
