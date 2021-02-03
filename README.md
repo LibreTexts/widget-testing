@@ -25,6 +25,7 @@ Debugging procedures;
   - Test `bokeh.html` using different binder repositories
     - ~~[default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)~~
     - ~~[binder-examples/bokeh](https://github.com/binder-examples/bokeh)~~
+  - [Thebe issue #112](https://github.com/executablebooks/thebe/issues/112)
 
 ### [ipywidgets](https://github.com/jupyter-widgets/ipywidgets)
 
@@ -34,7 +35,7 @@ Known bugs;
 
 Debugging procedures;
 
-  - TODO
+  - [Thebe issue #111](https://github.com/executablebooks/thebe/issues/111)
 
 ### [bqplot](https://github.com/bqplot/bqplot)
 
