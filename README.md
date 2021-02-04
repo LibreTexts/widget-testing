@@ -25,7 +25,11 @@ Debugging procedures;
   - Test `bokeh.html` using different binder repositories
     - ~~[default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)~~
     - ~~[binder-examples/bokeh](https://github.com/binder-examples/bokeh)~~
-  - [Thebe issue #112](https://github.com/executablebooks/thebe/issues/112)
+  - Thebe [issue #112](https://github.com/executablebooks/thebe/issues/112)
+    - The error message occurs during [this line](https://github.com/jupyterlab/jupyterlab/blob/a79d130576e3bac0fc73521ac7520cc6bc2b1f1a/packages/rendermime/src/widgets.ts#L421) of the JupyterLab code
+    - The source for `IRenderMime` code is in the [`rendermime-interfaces`](https://github.com/LibreTexts/widget-testing/tree/master/rendermime-interfaces) folder of this repository
+  - Web console shows that `https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.2.3.min.js` is not loading properly
+    - Previous version `https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.1.1.min.js` does get loaded, but same Javascript output disabled message
 
 ### [ipywidgets](https://github.com/jupyter-widgets/ipywidgets)
 
@@ -35,7 +39,7 @@ Known bugs;
 
 Debugging procedures;
 
-  - [Thebe issue #111](https://github.com/executablebooks/thebe/issues/111)
+  - Thebe [issue #111](https://github.com/executablebooks/thebe/issues/111)
 
 ### [bqplot](https://github.com/bqplot/bqplot)
 
