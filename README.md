@@ -26,8 +26,9 @@ Debugging procedures;
     - ~~[default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)~~
     - ~~[binder-examples/bokeh](https://github.com/binder-examples/bokeh)~~
   - Thebe [issue #112](https://github.com/executablebooks/thebe/issues/112)
-    - The error message occurs during [this line](https://github.com/jupyterlab/jupyterlab/blob/a79d130576e3bac0fc73521ac7520cc6bc2b1f1a/packages/rendermime/src/widgets.ts#L421) of the JupyterLab code
-    - The source for `IRenderMime` code is in the [`rendermime-interfaces`](https://github.com/LibreTexts/widget-testing/tree/master/rendermime-interfaces) folder of this repository
+    - The error message occurs during [this line](https://github.com/jupyterlab/jupyterlab/blob/master/packages/rendermime/src/widgets.ts#L421) of the JupyterLab code
+      - Info about the [render()](https://reactjs.org/) function call
+    - The source for `IRenderMime` code is in the [rendermime-interfaces](https://github.com/LibreTexts/widget-testing/tree/master/rendermime-interfaces) folder of this repository
   - Web console shows that `https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.2.3.min.js` is not loading properly
     - Previous version `https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.1.1.min.js` does get loaded, but same Javascript output disabled message
 
@@ -40,6 +41,9 @@ Known bugs;
 Debugging procedures;
 
   - Thebe [issue #111](https://github.com/executablebooks/thebe/issues/111)
+  - Web console says `future.js:179 Uncaught (in promise) Error: Canceled future for kernel_info_request message before replies were done`
+    - The error message is triggered by `future.js` which is built from [future.ts](https://github.com/jupyterlab/jupyterlab/blob/master/packages/services/src/kernel/future.ts#L196) in jupyterlab
+      - The message printed using the code above contains `kernel_info_request` [from default.ts](https://github.com/jupyterlab/jupyterlab/blob/master/packages/services/src/kernel/default.ts#L558)
 
 ### [bqplot](https://github.com/bqplot/bqplot)
 
