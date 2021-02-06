@@ -26,8 +26,7 @@ Debugging procedures;
     - ~~[default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)~~
     - ~~[binder-examples/bokeh](https://github.com/binder-examples/bokeh)~~
   - Thebe [issue #112](https://github.com/executablebooks/thebe/issues/112)
-    - The error message occurs during this [line](https://github.com/jupyterlab/jupyterlab/blob/master/packages/rendermime/src/widgets.ts#L421) of the JupyterLab code
-      - Info about the [render()](https://reactjs.org/) function call
+    - The error message occurs in [widgets.ts](https://github.com/jupyterlab/jupyterlab/blob/master/packages/rendermime/src/widgets.ts#L421) of the jupyterlab code
       - The source for `IRenderMime` code is in the [rendermime-interfaces](https://github.com/LibreTexts/widget-testing/tree/master/rendermime-interfaces) folder of this repository
       - The source for `translator` code comes from `ITranslator` which is downloaded in the [translation](https://github.com/LibreTexts/widget-testing/tree/master/translation) folder of this repository
     - Web console shows that `https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.2.3.min.js` is not loading properly
