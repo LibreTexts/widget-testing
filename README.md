@@ -26,12 +26,8 @@ Debugging procedures;
     - ~~[default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)~~
     - ~~[binder-examples/bokeh](https://github.com/binder-examples/bokeh)~~
   - Thebe [issue #112](https://github.com/executablebooks/thebe/issues/112)
-<<<<<<< HEAD
     - The error message occurs in [widgets.ts](https://github.com/jupyterlab/jupyterlab/blob/master/packages/rendermime/src/widgets.ts#L421) of the jupyterlab code
-=======
-    - The error message occurs in [widgets.ts](https://github.com/jupyterlab/jupyterlab/blob/master/packages/rendermime/src/widgets.ts#L421) of the JupyterLab code
       - Info about the [render()](https://reactjs.org/) function call
->>>>>>> 903ce9e2bf6896b72d766aaf1af2d637419bd8b5
       - The source for `IRenderMime` code is in the [rendermime-interfaces](https://github.com/LibreTexts/widget-testing/tree/master/rendermime-interfaces) folder of this repository
       - The source for `translator` code comes from `ITranslator` which is downloaded in the [translation](https://github.com/LibreTexts/widget-testing/tree/master/translation) folder of this repository
     - Web console shows that `https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.2.3.min.js` is not loading properly
@@ -50,6 +46,16 @@ Debugging procedures;
     - The error message is triggered by `future.js` which is built from [future.ts](https://github.com/jupyterlab/jupyterlab/blob/master/packages/services/src/kernel/future.ts#L196) in jupyterlab
       - The message printed using the code above contains `kernel_info_request` [from default.ts](https://github.com/jupyterlab/jupyterlab/blob/master/packages/services/src/kernel/default.ts#L558)
 
+### [ipycytoscape](https://github.com/Quantstack/ipycytoscape)
+
+Known bugs;
+
+  - ipycytoscape version 1.1.0>= does not work properly on Thebe. Running the widget gives `error displaying widget` message.
+
+Debugging procedures;
+
+  - Confirm if ipycytoscape=1.0.4 works on Thebe and jupyter.libretexts.org using default-env. It does work on Thebe using the `QuantStack/ipycytoscape` repo with `ref=1.0.4`.
+  
 ### [bqplot](https://github.com/bqplot/bqplot)
 
 Known bugs;
@@ -113,8 +119,6 @@ Debugging procedures;
 ## Widgets that work or have been fixed
 
 ### [ipympl](https://github.com/matplotlib/ipympl)
-
-### [ipycytoscape](https://github.com/Quantstack/ipycytoscape)
 
 ### [plotly](https://github.com/plotly/plotly.py)
 
