@@ -56,7 +56,7 @@ Known bugs;
 
 Debugging procedures;
 
-  - ipycytoscape=1.0.4 works on Thebe and our JupyterHub with our default-env. Versions greater than that do not currently work on either. We suspect that there is some dependency conflict in both our default-env and on Thebe.
+  - ipycytoscape=1.0.4 works on Thebe and our JupyterHub with our default-env. Versions greater than that do not currently work on either. We suspect that there is some package in common between default-env 2.3.2 and `QuantStack/ipycytoscape` that has a dependency conflict with `ipycytoscape > 1.0.4`
   - More details outlined in metalc [issue#226](https://github.com/LibreTexts/metalc/issues/226).
   
 ### [bqplot](https://github.com/bqplot/bqplot)
