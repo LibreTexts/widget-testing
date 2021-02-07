@@ -55,6 +55,7 @@ Known bugs;
 Debugging procedures;
 
   - Confirm if ipycytoscape=1.0.4 works on Thebe and jupyter.libretexts.org using default-env. It does work on Thebe using the `QuantStack/ipycytoscape` repo with `ref=1.0.4`.
+  - More details outlined in metalc [issue#226](https://github.com/LibreTexts/metalc/issues/226).
   
 ### [bqplot](https://github.com/bqplot/bqplot)
 
