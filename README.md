@@ -22,7 +22,7 @@ Known bugs;
 
 Debugging procedures;
 
-  - Test `bokeh.html` using different binder repositories
+  - Test `bokeh.html` using different binder repositories (crossed out means tested, repo is probably not the issue)
     - ~~[default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)~~
     - ~~[binder-examples/bokeh](https://github.com/binder-examples/bokeh)~~
   - Thebe [issue #112](https://github.com/executablebooks/thebe/issues/112)
