@@ -32,6 +32,7 @@ Debugging procedures;
       - The source for `translator` code comes from `ITranslator` which is downloaded in the [translation](https://github.com/LibreTexts/widget-testing/tree/master/translation) folder of this repository
     - Web console shows that `https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.2.3.min.js` is not loading properly
       - Previous version `https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.1.1.min.js` does get loaded, but same Javascript output disabled message
+    - Sometimes the errors in the web console do not show up at all. Don't see any consistent patterns to this.
 
 ### [ipywidgets](https://github.com/jupyter-widgets/ipywidgets)
 
@@ -45,6 +46,7 @@ Debugging procedures;
   - Web console says `future.js:179 Uncaught (in promise) Error: Canceled future for kernel_info_request message before replies were done`
     - The error message is triggered by `future.js` which is built from [future.ts](https://github.com/jupyterlab/jupyterlab/blob/master/packages/services/src/kernel/future.ts#L196) in jupyterlab
       - The message printed using the code above contains `kernel_info_request` [from default.ts](https://github.com/jupyterlab/jupyterlab/blob/master/packages/services/src/kernel/default.ts#L558)
+  - Sometimes the errors in the web console do not show up at all. Don't see any consistent patterns to this.
 
 ### [ipycytoscape](https://github.com/Quantstack/ipycytoscape)
 
@@ -54,7 +56,7 @@ Known bugs;
 
 Debugging procedures;
 
-  - Confirm if ipycytoscape=1.0.4 works on Thebe and jupyter.libretexts.org using default-env. It does work on Thebe using the `QuantStack/ipycytoscape` repo with `ref=1.0.4`.
+  - ipycytoscape=1.0.4 works on Thebe and our JupyterHub with our default-env. Versions greater than that do not currently work on either. We suspect that there is some dependency conflict in both our default-env and on Thebe.
   - More details outlined in metalc [issue#226](https://github.com/LibreTexts/metalc/issues/226).
   
 ### [bqplot](https://github.com/bqplot/bqplot)
