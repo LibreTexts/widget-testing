@@ -58,11 +58,9 @@ Known bugs;
 
 Debugging procedures;
 
-  - ipycytoscape=1.0.4 works on Thebe and our JupyterHub with our default-env. Versions greater than that do not currently work on either. We suspect that there is some package in common between default-env 2.3.2 and `QuantStack/ipycytoscape` that has a dependency conflict with `ipycytoscape > 1.0.4`
-  - More details outlined in metalc [issue#226](https://github.com/LibreTexts/metalc/issues/226).
-  - Using this repository as the build image on binder.libretexts.org you can get a functional ipycytoscape=1.2.0 output. The same is true for default-env 2.3.2.
-    - The files `default-env-depend-ipycytoscape-tree.txt` and `widget-testing-depend-ipycytoscape-tree.txt` are the output of `conda-tree depends -t --small ipycytoscape` within the default-env 2.3.2 and this widget-testing environment respectively. Use the `diff` command to see the version differences of the dependency tree. Oddly, the ones for default-env are newer despite being built longer ago.
-  - It would appear as if Thebe looks at unpkg for the js files to properly render output. However, anything past 1.0.4 is not on unpkg, resulting in errors.
+  - ipycytoscape=1.0.4 works on Thebe and JupyterLab with our default-env. Versions greater than that only work on JupyterLab with JupyterLab>=3 and jupyterlab-manager@3.0.0. Thebe still will not properly display ipycytoscape even if JupyterLab>=3 is specified in the binder image (such as this repo). Therefore, Thebe does not work with ipycytoscape>1.0.4 at all.
+  - More details outlined in metalc [issue #226](https://github.com/LibreTexts/metalc/issues/226).
+  - Thebe [issue #357](https://github.com/executablebooks/thebe/issues/357)
 
   
 ### [bqplot](https://github.com/bqplot/bqplot)
