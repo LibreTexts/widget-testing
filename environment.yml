@@ -4,28 +4,10 @@ channels:
   - defaults
 dependencies:
   - conda-tree
-
-  # new error message if using this one
-  - notebook=6.0.3
-
-  # no noticable effect
-  - jupyter_core=4.6.3
-  - numpy=1.20.0
-
-  # trying these ones
-  - certifi=2020.6.20
-  - pyzmq=19.0.1
-  - libsodium=1.0.17
-  - zeromq=4.3.2
-  - tornado=6.0.4
-  - libopenblas=0.3.12 
-  - pytz=2021.1
+  - ipycytoscape>=1.0.3
   - jupyterlab=3
-
-  - ipycytoscape=1.2.0=pyhd8ed1ab_0
-  - ipywidgets=7.6.3=pyhd3deb0d_0
-  - networkx=2.5=py_0
-  - pandas=1.2.1=py37hdc94413_0
-  - python=3.7.8=h6f2ec95_0_cpython
-  - spectate=1.0.0=py37h89c1867_1
-  - traittypes=0.2.1=pyh9f0ad1d_2
+  - matplotlib-base
+  - networkx
+  - pandas
+  - traitlets
+  - spectate
