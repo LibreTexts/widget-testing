@@ -49,19 +49,6 @@ Debugging procedures;
     - The error message is triggered by `future.js` which is built from [future.ts](https://github.com/jupyterlab/jupyterlab/blob/master/packages/services/src/kernel/future.ts#L196) in jupyterlab
       - The message printed using the code above contains `kernel_info_request` [from default.ts](https://github.com/jupyterlab/jupyterlab/blob/master/packages/services/src/kernel/default.ts#L558)
   - Sometimes the errors in the web console do not show up at all. Don't see any consistent patterns to this.
-
-### [ipycytoscape](https://github.com/Quantstack/ipycytoscape)
-
-Known bugs;
-
-  - ipycytoscape version 1.1.0>= does not work properly on Thebe. Running the widget gives `error displaying widget` message.
-
-Debugging procedures;
-
-  - ipycytoscape=1.0.4 works on Thebe and JupyterLab with our default-env. Versions greater than that only work on JupyterLab with JupyterLab>=3 and jupyterlab-manager@3.0.0. Thebe still will not properly display ipycytoscape even if JupyterLab>=3 is specified in the binder image (such as this repo). Therefore, Thebe does not work with ipycytoscape>1.0.4 at all.
-  - More details outlined in metalc [issue #226](https://github.com/LibreTexts/metalc/issues/226).
-  - Thebe [issue #357](https://github.com/executablebooks/thebe/issues/357)
-
   
 ### [bqplot](https://github.com/bqplot/bqplot)
 
@@ -128,6 +115,8 @@ Debugging procedures;
 ### [ipympl](https://github.com/matplotlib/ipympl)
 
 ### [plotly](https://github.com/plotly/plotly.py)
+
+### [ipycytoscape](https://github.com/Quantstack/ipycytoscape)
 
 # Screenshots for widgets with bugs
 
