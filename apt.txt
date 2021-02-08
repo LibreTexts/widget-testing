@@ -1,0 +1,10 @@
+bash-completion
+nano
+vim
+clang
+cmake
+ffmpeg
+htop
+pandoc
+tree
+imagemagick
