@@ -62,6 +62,7 @@ Debugging procedures;
   - More details outlined in metalc [issue#226](https://github.com/LibreTexts/metalc/issues/226).
   - Using this repository as the build image on binder.libretexts.org you can get a functional ipycytoscape=1.2.0 output. The same is true for default-env 2.3.2.
     - The files `default-env-depend-ipycytoscape-tree.txt` and `widget-testing-depend-ipycytoscape-tree.txt` are the output of `conda-tree depends -t --small ipycytoscape` within the default-env 2.3.2 and this widget-testing environment respectively. Use the `diff` command to see the version differences of the dependency tree. Oddly, the ones for default-env are newer despite being built longer ago.
+  - It would appear as if Thebe looks at unpkg for the js files to properly render output. However, anything past 1.0.4 is not on unpkg, resulting in errors.
 
   
 ### [bqplot](https://github.com/bqplot/bqplot)
