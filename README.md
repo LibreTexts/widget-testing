@@ -2,7 +2,7 @@
 
 Repo for cataloging the behavior of widgets in Thebe, Libretexts, and on JupyterHub. Reference to [this issue](https://github.com/LibreTexts/metalc/issues/136#issue-575899944).
 
-This repository is built to be [repo2docker compatible](https://repo2docker.readthedocs.io/en/latest/config_files.html). That means you can build it on https://binder.libretexts.org/ by specifying `LibreTexts/widget-testing` in the repository section and choosing whichever git branch you would like. Make sure you temporarily change the `.yaml` file in this directory that you would like to use as your conda environment to `environment.yaml` (do not commit this change).
+This repository is built to be [repo2docker compatible](https://repo2docker.readthedocs.io/en/latest/config_files.html). That means you can build it on https://binder.libretexts.org/ by specifying `LibreTexts/widget-testing` in the repository section and choosing whichever git branch you would like. Make sure that the `environment.yaml` file in this directory reflects the one you want to build, and make sure you dont change the file name. You can find other conda-environment `.yaml` files in the `conda-environments` directory.
 
 This repository was migrated over from the now archived [sandertyu/widgetstuffs](https://github.com/sandertyu/widgetstuffs) repository.
 
@@ -60,6 +60,8 @@ Debugging procedures;
 
   - ipycytoscape=1.0.4 works on Thebe and our JupyterHub with our default-env. Versions greater than that do not currently work on either. We suspect that there is some package in common between default-env 2.3.2 and `QuantStack/ipycytoscape` that has a dependency conflict with `ipycytoscape > 1.0.4`
   - More details outlined in metalc [issue#226](https://github.com/LibreTexts/metalc/issues/226).
+
+??? image for ipycytoscape tree here
   
 ### [bqplot](https://github.com/bqplot/bqplot)
 
