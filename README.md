@@ -72,10 +72,11 @@ Debugging procedures;
 Known bugs;
 
   - Binder image to run the widgets no longer builds, need to retest. Questionably worked before
+  - Some buttons are missing in a local Thebe instance, but not in a local ckeditor binder plguin instance. 
 
 Debugging procedures;
 
-  - TODO
+  - Example works identically to jhub when run in local ckeditor binder plugin. `pytraj` is not in default env so that must be installed.
 
 ### [ipygany](https://github.com/QuantStack/ipygany)
 
@@ -160,6 +161,8 @@ Debugging procedures;
 
 ## nglview
 
+### In ckeditor binder plugin (works properly)
+![nglview in ckeditor binder plugin](/screenshots/nglview-thebe-updated.jpg)
 ### In Thebe (buttons do not display, cannot run the animation)
 ![nglview in thebe](/screenshots/nglview-thebe.png)
 ### In JupyerLab (works properly)
