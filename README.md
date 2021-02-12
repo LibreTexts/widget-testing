@@ -60,11 +60,12 @@ Known bugs;
 
 Known bugs;
 
-  - Sliders and buttons do not render properly, very buggy in general
+  - ~~Sliders and buttons do not render properly, very buggy in general~~ Outdated info, seems to work fine now.
 
 Debugging procedures;
 
-  - TODO
+  - Tested in local Thebe and ckeditor binder plugin, works fine.
+  - Should be tested on LibreTexts.
 
 ### [nglview](https://github.com/nglviewer/nglview)
 
@@ -148,7 +149,9 @@ Debugging procedures;
 
 ## ipyvolume
 
-### In Thebe (missing button rendering and no sliders as well as python error. buttons probably could be loaded with external scripts, but the sliders are likely bugged the same way `interact()` from ipywidgets is)
+### Working fine in Thebe and ckeditor binder plugin
+![ipyvolume in thebe updated](/screenshots/ipyvolume-thebe-updated.gif)
+### ~~In Thebe (missing button rendering and no sliders as well as python error. buttons probably could be loaded with external scripts, but the sliders are likely bugged the same way `interact()` from ipywidgets is)~~
 ![ipyvolume in thebe](/screenshots/ipyvolume-thebe.png)
 ### In JupyterLab (Everything renders properly, but there is still a python error. this is just buggy source code)
 ![ipyvolume in jupyterlab](/screenshots/ipyvolume-jup.png)
