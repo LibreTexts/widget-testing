@@ -56,27 +56,18 @@ Known bugs;
 
   - [PR to fix on Thebe](https://github.com/executablebooks/thebe/pull/330), buttons were not working properly
 
-### [ipyvolume](https://github.com/maartenbreddels/ipyvolume)
-
-Known bugs;
-
-  - ~~Sliders and buttons do not render properly, very buggy in general~~ Outdated info, seems to work fine now.
-
-Debugging procedures;
-
-  - Tested in local Thebe and ckeditor binder plugin, works fine.
-  - Should be tested on LibreTexts.
-
 ### [nglview](https://github.com/nglviewer/nglview)
 
 Known bugs;
 
   - Binder image to run the widgets no longer builds, need to retest. Questionably worked before
   - Some buttons are missing in a local Thebe instance, but not in a local ckeditor binder plguin instance. 
+  - Works fine on Libretexts now.
 
 Debugging procedures;
 
   - Example works identically to jhub when run in local ckeditor binder plugin. `pytraj` is not in default env so that must be installed.
+  - Seems to work fine on Libretexts now.
 
 ### [ipygany](https://github.com/QuantStack/ipygany)
 
@@ -120,6 +111,8 @@ Debugging procedures;
 
 ### [ipycytoscape](https://github.com/Quantstack/ipycytoscape)
 
+### [ipyvolume](https://github.com/maartenbreddels/ipyvolume)
+
 # Screenshots for widgets with bugs
 
 ## ipyleaflet
@@ -147,17 +140,6 @@ Debugging procedures;
 ![bqplot in jupyterlab](/screenshots/bqplot-jup.png)
 ### In Libretexts (pan zoom button does not work, so cannot move the plot around. save button does work)
 ![bqplot in libretexts](/screenshots/bqplot-libre.png)
-
-## ipyvolume
-
-### Working fine in Thebe and ckeditor binder plugin
-![ipyvolume in thebe updated](/screenshots/ipyvolume-thebe-updated.gif)
-### ~~In Thebe (missing button rendering and no sliders as well as python error. buttons probably could be loaded with external scripts, but the sliders are likely bugged the same way `interact()` from ipywidgets is)~~
-![ipyvolume in thebe](/screenshots/ipyvolume-thebe.png)
-### In JupyterLab (Everything renders properly, but there is still a python error. this is just buggy source code)
-![ipyvolume in jupyterlab](/screenshots/ipyvolume-jup.png)
-### In Libretexts (buttons render but sliders do not, similar to Thebe)
-![ipyvolume in libretexts](/screenshots/ipyvolume-libre.png)
 
 ## nglview
 
