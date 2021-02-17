@@ -87,12 +87,12 @@ These widgets work properly in Thebe but not so well on Libretexts due to limita
 
 Known bugs;
 
-  - ~~For instance, if you try to add a heatmap to the output of an earlier cell, it will not cause any change.~~ Tested with ckeditor binder plugin locally - when a new heatmap cell is added, it works if you rerun the previous cell containing the map, and then the heatmap cell. (does not work if you only run the new cell containing the heat map)
-  - Tested with thebe locally, default-env 2.3.2 - works fine.
+  - ~~For instance, if you try to add a heatmap to the output of an earlier cell, it will not cause any change.~~ 
 
 Debugging procedures;
 
-  - TODO
+  - Tested with ckeditor binder plugin locally - when a new heatmap cell is added, it works if you rerun the previous cell containing the map, and then the heatmap cell. (does not work if you only run the new cell containing the heat map)
+  - Tested with thebe locally, default-env 2.3.2 - works fine.
 
 ### [pythreejs](https://github.com/jupyter-widgets/pythreejs)
 
