@@ -114,6 +114,8 @@ Debugging procedures;
 
 ### [ipyvolume](https://github.com/maartenbreddels/ipyvolume)
 
+### [ipygany](https://github.com/QuantStack/ipygany) (not currently in use in default-env)
+
 # Screenshots for widgets with bugs
 
 ## ipyleaflet
@@ -161,8 +163,3 @@ Debugging procedures;
 
 ### In JupyterLab (works properly)
 ![bokeh in jupyterlab](/screenshots/bokeh-jup.png)
-
-## ipygany
-
-### In Thebe (visual loads fine, ipywidget sliders will not)
-![ipygany in thebe](/screenshots/ipygany-thebe.png)
