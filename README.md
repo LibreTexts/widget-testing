@@ -69,16 +69,6 @@ Debugging procedures;
   - Example works identically to jhub when run in local ckeditor binder plugin. `pytraj` is not in default env so that must be installed.
   - Seems to work fine on Libretexts now.
 
-### [ipygany](https://github.com/QuantStack/ipygany)
-
-Known bugs;
-
-  - ipywidget sliders do not show (if you choose to use them with [thresholds, for example](https://ipygany.readthedocs.io/en/latest/api_reference/threshold.html))
-
-Debugging procedures;
-
-  - TODO
-
 ## Widgets with problems on Libretexts
 
 These widgets work properly in Thebe but not so well on Libretexts due to limitations of the CKEditor Binder Plugin. Cells cannot retroactively change the output of another cell in CKEditor Binder Plugin, so these widgets are severely limited. See [this issue for more info](https://github.com/LibreTexts/ckeditor-binder-plugin/issues/107). Theoretically this issue effects all widgets on Libretexts, but these ones seem most impacted due to how they are used.
