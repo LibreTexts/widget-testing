@@ -14,7 +14,7 @@ Use `python -m http.server` (`python3` if `python` is an alias for python v2) wi
 
 Below is a table outlining the general condition of each widget. A checked box means that the widget has been verified as working on that platform. An unchecked box means that the widget has errors (more outlined below), and ??? means that the status of the widget on that platform has not been verified.
 | Widget | JupyterLab=2 | JupyterLab=3 | Thebe | CKEditor Binger Plugin | libretexts.org |
-|-|-|-|-|-|
+|-|-|-|-|-|-|
 | Bokeh | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: |
 | Object Cache   | > 5 hours  |  | in progress | [x] item1<br/>[ ] item2
 | Object Cache   | > 5 hours  |  | in progress | <ul><li>- [x] item1</li><li>- [ ] item2</li></ul>
