@@ -12,21 +12,21 @@ Use `python -m http.server` (`python3` if `python` is an alias for python v2) wi
 
 # Widget Status
 
-Below is a table which outlines the general functionality of each widget on each platform. :heavy_check_mark: means that the widget works as expected, :white_check_mark: means that only some functionality works, :x: means that the widget basically does not work at all, and ??? means that the status has not been verified. See the sections dedicated to each widget below for more information about the widgets labelled with :white_check_mark: and :x:.
+Below is a table which outlines the general functionality of each widget on each platform. :heavy_check_mark: means that the widget works as expected, :white_check_mark: means that only some functionality works, :x: means that the widget basically does not work at all, and :question: means that the status has not been verified. See the sections dedicated to each widget below for more information about the widgets labelled with :white_check_mark: and :x:.
 
 | Widget | JupyterLab=2 | JupyterLab=3 | Thebe | CKEditor Binger Plugin | libretexts.org |
 |-|-|-|-|-|-|
-| Bokeh | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: |
-| ipywidget | :heavy_check_mark: | :heavy_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| bqplot | :heavy_check_mark: | :heavy_check_mark: | Waiting on Thebe PR #330 | Waiting on Thebe PR #330 | Waiting on Thebe PR #330 |
-| ipyleaflet | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :white_check_mark: | :white_check_mark: |
-| pythreejs | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :white_check_mark: | :white_check_mark: |
-| ipympl | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| plotly | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Bokeh | :heavy_check_mark: | :question: | :x: | :x: | :x: |
+| ipywidgets | :heavy_check_mark: | :question: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| bqplot | :heavy_check_mark: | :question: | Waiting on Thebe PR #330 | Waiting on Thebe PR #330 | Waiting on Thebe PR #330 |
+| ipyleaflet | :heavy_check_mark: | :question: | :heavy_check_mark: | :white_check_mark: | :white_check_mark: |
+| pythreejs | :heavy_check_mark: | :question: | :heavy_check_mark: | :white_check_mark: | :white_check_mark: |
+| ipympl | :heavy_check_mark: | :question: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| plotly | :heavy_check_mark: | :question: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | ipycytoscape | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| ipyvolume | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| ipygany | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| nglview | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| ipyvolume | :heavy_check_mark: |:question: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| ipygany | :heavy_check_mark: | :question: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| nglview | :heavy_check_mark: | :question: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ## Widgets with Thebe errors
 
