@@ -12,13 +12,21 @@ Use `python -m http.server` (`python3` if `python` is an alias for python v2) wi
 
 # Widget Status
 
-Below is a table outlining the general condition of each widget. A checked box means that the widget has been verified as working on that platform. An unchecked box means that the widget has errors (more outlined below), and ??? means that the status of the widget on that platform has not been verified.
+Below is a table which outlines the general functionality of each widget on each platform. :heavy_check_mark: means that the widget works as expected, :white_check_mark: means that only some functionality works, :x: means that the widget basically does not work at all, and ??? means that the status has not been verified. See the sections dedicated to each widget below for more information about the widgets labelled with :white_check_mark: and :x:.
+
 | Widget | JupyterLab=2 | JupyterLab=3 | Thebe | CKEditor Binger Plugin | libretexts.org |
 |-|-|-|-|-|-|
 | Bokeh | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: |
-| Object Cache   | > 5 hours  |  | in progress | [x] item1<br/>[ ] item2
-| Object Cache   | > 5 hours  |  | in progress | <ul><li>- [x] item1</li><li>- [ ] item2</li></ul>
-| Object Cache   | > 5 hours  |  | in progress | <ul><li>[x] item1</li><li>[ ] item2</li></ul>
+| ipywidget | :heavy_check_mark: | :heavy_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| bqplot | :heavy_check_mark: | :heavy_check_mark: | Waiting on Thebe PR #330 | Waiting on Thebe PR #330 | Waiting on Thebe PR #330 |
+| ipyleaflet | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :white_check_mark: | :white_check_mark: |
+| pythreejs | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :white_check_mark: | :white_check_mark: |
+| ipympl | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| plotly | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| ipycytoscape | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| ipyvolume | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| ipygany | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| nglview | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ## Widgets with Thebe errors
 
@@ -64,19 +72,6 @@ Known bugs;
 
   - [PR to fix on Thebe](https://github.com/executablebooks/thebe/pull/330), buttons were not working properly
 
-### [nglview](https://github.com/nglviewer/nglview)
-
-Known bugs;
-
-  - Binder image to run the widgets no longer builds, need to retest. Questionably worked before
-  - Some buttons are missing in a local Thebe instance, but not in a local ckeditor binder plguin instance. 
-  - Works fine on Libretexts now.
-
-Debugging procedures;
-
-  - Example works identically to jhub when run in local ckeditor binder plugin. `pytraj` is not in default env so that must be installed.
-  - Seems to work fine on Libretexts now.
-
 ## Widgets with problems on Libretexts
 
 These widgets work properly in Thebe but not so well on Libretexts due to limitations of the CKEditor Binder Plugin. Cells cannot retroactively change the output of another cell in CKEditor Binder Plugin, so these widgets are severely limited. See [this issue for more info](https://github.com/LibreTexts/ckeditor-binder-plugin/issues/107). Theoretically this issue effects all widgets on Libretexts, but these ones seem most impacted due to how they are used.
@@ -113,6 +108,8 @@ Debugging procedures;
 ### [ipyvolume](https://github.com/maartenbreddels/ipyvolume)
 
 ### [ipygany](https://github.com/QuantStack/ipygany) (not currently in use in default-env)
+
+### [nglview](https://github.com/nglviewer/nglview)
 
 # Screenshots for widgets with bugs
 
