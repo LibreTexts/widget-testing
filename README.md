@@ -19,7 +19,7 @@ Below is a table which outlines the general functionality of each widget on each
   - :x: means that the widget basically does not work at all, not displaying or something of that sort 
   - :question: means that the status has not been verified. 
 
-See the sections dedicated to each widget below for more information about the widgets labelled with :o: and :x:.
+The `JupyterLab=2` column means that the widget has been tested in the specified environment which runs on `JupyterLab=2`, and the same for the `JupyterLab=3` column. The `Thebe` column represents widgets tested on HTML pages in the `Thebe/` directory of this repository, or on the example pages for [Thebe's documentation](https://thebelab.readthedocs.io/en/latest/). `CKEditor Binder Plugin` represents running the widget while in the plugin's development mode. Widgets tested on a page in `query.libretexts.org` are in that respective column, and then the libraries which a widget has been verified to be working (or not) on libretexts.org in are outlined in the `libretexts.org libraries` column. 
 
 | Widget | JupyterLab=2 | JupyterLab=3 | Thebe | CKEditor Binger Plugin | query.libretexts.org | libretexts.org libraries |
 |-|-|-|-|-|-|-|
@@ -34,6 +34,8 @@ See the sections dedicated to each widget below for more information about the w
 | ipyvolume | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :question: | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (Chemistry Library) |
 | ipygany | :heavy_check_mark: [QuantStack/ipygany 0.5.0](https://github.com/QuantStack/ipygany/tree/0.5.0) | :heavy_check_mark: [QuantStack/ipygany 0.5.0](https://github.com/QuantStack/ipygany/tree/0.5.0) | :heavy_check_mark: [QuantStack/ipygany 0.5.0](https://github.com/QuantStack/ipygany/tree/0.5.0) | :heavy_check_mark: [QuantStack/ipygany 0.5.0](https://github.com/QuantStack/ipygany/tree/0.5.0) | :heavy_check_mark: [QuantStack/ipygany 0.5.0](https://github.com/QuantStack/ipygany/tree/0.5.0) | :question: |
 | nglview | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :question: | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (Chemistry Library) |
+
+See the sections dedicated to each widget below for more information about the widgets labelled with :o: and :x:.
 
 ## Widgets with Thebe errors
 
