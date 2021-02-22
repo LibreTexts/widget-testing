@@ -12,21 +12,28 @@ Use `python -m http.server` (`python3` if `python` is an alias for python v2) wi
 
 # Widget Status
 
-Below is a table which outlines the general functionality of each widget on each platform. :heavy_check_mark: means that the widget works as expected, :white_check_mark: means that only some functionality works, :x: means that the widget basically does not work at all, and :question: means that the status has not been verified. See the sections dedicated to each widget below for more information about the widgets labelled with :white_check_mark: and :x:.
+Below is a table which outlines the general functionality of each widget on each platform. Where applicable, the latest version of the package environment to be verified for that platform has been specified.
 
-| Widget | JupyterLab=2 | JupyterLab=3 | Thebe | CKEditor Binger Plugin | libretexts.org |
-|-|-|-|-|-|-|
-| Bokeh | :heavy_check_mark: | :question: | :x: | :x: | :x: |
-| ipywidgets | :heavy_check_mark: | :question: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| bqplot | :heavy_check_mark: | :question: | Waiting on Thebe PR #330 | Waiting on Thebe PR #330 | Waiting on Thebe PR #330 |
-| ipyleaflet | :heavy_check_mark: | :question: | :heavy_check_mark: | :white_check_mark: | :white_check_mark: |
-| pythreejs | :heavy_check_mark: | :question: | :heavy_check_mark: | :white_check_mark: | :white_check_mark: |
-| ipympl | :heavy_check_mark: | :question: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| plotly | :heavy_check_mark: | :question: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| ipycytoscape | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| ipyvolume | :heavy_check_mark: |:question: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| ipygany | :heavy_check_mark: | :question: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| nglview | :heavy_check_mark: | :question: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+  - :heavy_check_mark: means that the widget works exactly as expected 
+  - :o: means that the widget itself is fine, but the platform makes it difficult to use
+  - :x: means that the widget basically does not work at all, not displaying or something of that sort 
+  - :question: means that the status has not been verified. 
+
+See the sections dedicated to each widget below for more information about the widgets labelled with :o: and :x:.
+
+| Widget | JupyterLab=2 | JupyterLab=3 | Thebe | CKEditor Binger Plugin | query.libretexts.org | libretexts.org libraries |
+|-|-|-|-|-|-|-|
+| Bokeh | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :question: | :x: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :x: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :x: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :x: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (no specific library) |
+| ipywidgets | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :question: | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (no specific library)|
+| bqplot | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :question: | Waiting on Thebe PR #330 | Waiting on Thebe PR #330 | Waiting on Thebe PR #330 | Waiting on Thebe PR #330 |
+| ipyleaflet | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :question: | :heavy_check_mark: [jupyter-widgets/ipyleaflet 0.13.3](https://thebelab.readthedocs.io/en/latest/examples/ipyleaflet_example.html) and default-env 2.3.2 | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (no specific library) |
+| pythreejs | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)| :question: | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)| :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)| :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)| :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (no specific library) |
+| ipympl | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :question: | :heavy_check_mark: [matplotlib/ipympl 0.6.1](https://thebelab.readthedocs.io/en/latest/examples/ipympl_example.html) and default-env 2.3.2 | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (Chemistry Library) |
+| plotly | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :question: | :heavy_check_mark: [plotly/plotly.py doc-prod](https://thebelab.readthedocs.io/en/latest/examples/plotly-example.html) and default-env 2.3.2 | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (Chemistry Library) |
+| ipycytoscape | :heavy_check_mark: [default-env 2.3.3](https://github.com/LibreTexts/default-env/tree/2.3.3) | :heavy_check_mark: [QuantStack/ipycytoscape 1.2.0](https://github.com/QuantStack/ipycytoscape/tree/1.2.0) | :heavy_check_mark: [QuantStack/ipycytoscape 1.0.4](https://thebelab.readthedocs.io/en/latest/examples/ipycytoscape_example.html) and default-env 2.3.3 | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (Chemistry Library) |
+| ipyvolume | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :question: | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (Chemistry Library) |
+| ipygany | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :question: | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :question: |
+| nglview | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :question: | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (Chemistry Library) |
 
 ## Widgets with Thebe errors
 
