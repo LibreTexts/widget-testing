@@ -81,6 +81,9 @@ Known bugs;
 
   - [PR to fix on Thebe](https://github.com/executablebooks/thebe/pull/330), buttons were not working properly
 
+### [ipycytoscape](https://github.com/Quantstack/ipycytoscape)
+
+I don't even know anymore. Seems to only work consistently with version 1.2.0 which requires jupyterlab=3
 ## Widgets with problems on Libretexts
 
 These widgets work properly in Thebe but not so well on Libretexts due to limitations of the CKEditor Binder Plugin. Cells cannot retroactively change the output of another cell in CKEditor Binder Plugin, so these widgets are severely limited. See [this issue for more info](https://github.com/LibreTexts/ckeditor-binder-plugin/issues/107). Theoretically this issue effects all widgets on Libretexts, but these ones seem most impacted due to how they are used.
@@ -111,8 +114,6 @@ Debugging procedures;
 ### [ipympl](https://github.com/matplotlib/ipympl)
 
 ### [plotly](https://github.com/plotly/plotly.py)
-
-### [ipycytoscape](https://github.com/Quantstack/ipycytoscape)
 
 ### [ipyvolume](https://github.com/maartenbreddels/ipyvolume)
 
