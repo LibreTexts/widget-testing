@@ -1,14 +1,30 @@
 channels:
   - conda-forge
   - https://conda.anaconda.org/conda-forge
+  - AmberMD
   - defaults
 dependencies:
   - conda-tree
-  - ipycytoscape>=1.0.3
+  - bokeh=2.3.0
+  - ipywidgets=7.6.3
+  - bqplot=0.12.22
+  - ipyleaflet=0.13.6
+  - pythreejs=2.2.1
+  - matplotlib=3.3.4
+  - ipympl=0.6.3
+  - plotly=4.14.3
+  - ipycytoscape=1.2.0
+  - ipyvolume=0.6
+  - ipygany=0.5.0
+  - nglview=2.7.7
+  - pytraj=2.0.5
   - jupyterlab=3
+<<<<<<< HEAD
+=======
   - matplotlib-base
   - networkx
   - pandas
   - traitlets
   - spectate
   - ipyvolume
+>>>>>>> abd4b606d517d7503a6efa1cf0668661c3768e10
