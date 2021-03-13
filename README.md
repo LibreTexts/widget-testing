@@ -28,7 +28,7 @@ Each widget is tested using the code used in the `<pre data-executable="true" da
 | Bokeh | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [widget-testing](https://github.com/LibreTexts/widget-testing/tree/all-widgets-jlab3) | :x: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :x: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :x: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :x: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (no specific library) |
 | ipywidgets | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [widget-testing](https://github.com/LibreTexts/widget-testing/tree/all-widgets-jlab3) | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (no specific library)|
 | bqplot | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [widget-testing](https://github.com/LibreTexts/widget-testing/tree/all-widgets-jlab3) | Waiting on Thebe PR #330 | Waiting on Thebe PR #330 | Waiting on Thebe PR #330 | Waiting on Thebe PR #330 |
-| ipyleaflet | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [widget-testing](https://github.com/LibreTexts/widget-testing/tree/all-widgets-jlab3) | :heavy_check_mark: [jupyter-widgets/ipyleaflet 0.13.3](https://thebelab.readthedocs.io/en/latest/examples/ipyleaflet_example.html) and default-env 2.3.2 | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (no specific library) |
+| ipyleaflet | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [widget-testing](https://github.com/LibreTexts/widget-testing/tree/all-widgets-jlab3) | :heavy_check_mark: [jupyter-widgets/ipyleaflet 0.13.3](https://thebelab.readthedocs.io/en/latest/examples/ipyleaflet_example.html) and default-env 2.3.2 | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (with specific css rule) | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) |
 | pythreejs | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)| :heavy_check_mark: [widget-testing](https://github.com/LibreTexts/widget-testing/tree/all-widgets-jlab3) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)| :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)| :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)| :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (no specific library) |
 | ipympl | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [widget-testing](https://github.com/LibreTexts/widget-testing/tree/all-widgets-jlab3) | :heavy_check_mark: [matplotlib/ipympl 0.6.1](https://thebelab.readthedocs.io/en/latest/examples/ipympl_example.html) and default-env 2.3.2 | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (Chemistry Library) |
 | plotly | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [widget-testing](https://github.com/LibreTexts/widget-testing/tree/all-widgets-jlab3) | :heavy_check_mark: [plotly/plotly.py doc-prod](https://thebelab.readthedocs.io/en/latest/examples/plotly-example.html) and default-env 2.3.2 | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (Chemistry Library) |
@@ -94,12 +94,11 @@ These widgets work properly in Thebe but not so well on Libretexts due to limita
 
 Known bugs;
 
-  - ~~For instance, if you try to add a heatmap to the output of an earlier cell, it will not cause any change.~~ 
+  - Overlays do not show.
 
 Debugging procedures;
 
-  - Tested with ckeditor binder plugin locally - when a new heatmap cell is added, it works if you rerun the previous cell containing the map, and then the heatmap cell. (does not work if you only run the new cell containing the heat map)
-  - Tested with thebe locally, default-env 2.3.2 - works fine.
+  - The current max-width css rule for `canvas` html objects causes map overlays to not show. Query currently has a fix on it that allows it to work.
 
 ### [pythreejs](https://github.com/jupyter-widgets/pythreejs)
 
@@ -131,7 +130,6 @@ Debugging procedures;
 ![ipyleaflet in Thebe](/screenshots/ipyleaflet-thebe.png)
 ### In Libretexts (cells cannot communicate, so the heatmap and timelapse do not work)*
 ![ipyleaflet in libretexts](/screenshots/ipyleaflet-libre.png)
-*may be a different issue since the heatmap and timelapse do not work even if in the same code cell.
 
 ## ipywidgets
 
