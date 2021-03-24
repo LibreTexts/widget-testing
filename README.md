@@ -29,7 +29,7 @@ Each widget is tested using the code used in the `<pre data-executable="true" da
 | ipywidgets | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [widget-testing](https://github.com/LibreTexts/widget-testing/tree/all-widgets-jlab3) | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (no specific library)|
 | bqplot | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [widget-testing](https://github.com/LibreTexts/widget-testing/tree/all-widgets-jlab3) | Waiting on Thebe PR #330 | Waiting on Thebe PR #330 | Waiting on Thebe PR #330 | Waiting on Thebe PR #330 |
 | ipyleaflet | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [widget-testing](https://github.com/LibreTexts/widget-testing/tree/all-widgets-jlab3) | :heavy_check_mark: [jupyter-widgets/ipyleaflet 0.13.3](https://thebelab.readthedocs.io/en/latest/examples/ipyleaflet_example.html) and default-env 2.3.2 | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (with specific css rule) | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) |
-| pythreejs | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)| :heavy_check_mark: [widget-testing](https://github.com/LibreTexts/widget-testing/tree/all-widgets-jlab3) | :x: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)| :x: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)| :x: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)| :x: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (no specific library) |
+| pythreejs | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2)| :heavy_check_mark: [widget-testing](https://github.com/LibreTexts/widget-testing/tree/all-widgets-jlab3) | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) `render()` calls do not display | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) `render()` calls do not display | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) `render()` calls do not display | :o: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (no specific library) |
 | ipympl | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [widget-testing](https://github.com/LibreTexts/widget-testing/tree/all-widgets-jlab3) | :heavy_check_mark: [matplotlib/ipympl 0.6.1](https://thebelab.readthedocs.io/en/latest/examples/ipympl_example.html) and default-env 2.3.2 | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (Chemistry Library) |
 | plotly | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [widget-testing](https://github.com/LibreTexts/widget-testing/tree/all-widgets-jlab3) | :heavy_check_mark: [plotly/plotly.py doc-prod](https://thebelab.readthedocs.io/en/latest/examples/plotly-example.html) and default-env 2.3.2 | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) | :heavy_check_mark: [default-env 2.3.2](https://github.com/LibreTexts/default-env/tree/2.3.2) (Chemistry Library) |
 | ipycytoscape | :heavy_check_mark: [default-env 2.3.3](https://github.com/LibreTexts/default-env/tree/2.3.3) | :heavy_check_mark: [widget-testing](https://github.com/LibreTexts/widget-testing/tree/all-widgets-jlab3) | :x: [QuantStack/ipycytoscape 1.0.4](https://thebelab.readthedocs.io/en/latest/examples/ipycytoscape_example.html) but 1.2.0 works | :x: [default-env 2.3.3](https://github.com/LibreTexts/default-env/tree/2.3.3) | :x: [default-env 2.3.3](https://github.com/LibreTexts/default-env/tree/2.3.3) | :x: [default-env 2.3.3](https://github.com/LibreTexts/default-env/tree/2.3.3) (Chemistry Library) |
@@ -83,9 +83,20 @@ Known bugs;
 
   - [PR to fix on Thebe](https://github.com/executablebooks/thebe/pull/330), buttons were not working properly
 
+### [pythreejs](https://github.com/jupyter-widgets/pythreejs)
+
+Known bugs;
+ 
+ - Thebe can display basic widgets as shown in the first cell of `Thebe/pythreejs.html`, but more complicated mechanisms like using the `display()` function yield `error displaying widget errors` like in ipywidgets.
+
+Debugging procedures;
+
+  - TODO
+
 ### [ipycytoscape](https://github.com/Quantstack/ipycytoscape)
 
 I don't even know anymore. Seems to only work consistently with version 1.2.0 which requires jupyterlab=3
+
 ## Widgets with problems on Libretexts
 
 These widgets work properly in Thebe but not so well on Libretexts due to limitations of the CKEditor Binder Plugin. Cells cannot retroactively change the output of another cell in CKEditor Binder Plugin, so these widgets are severely limited. See [this issue for more info](https://github.com/LibreTexts/ckeditor-binder-plugin/issues/107). Theoretically this issue effects all widgets on Libretexts, but these ones seem most impacted due to how they are used.
@@ -99,16 +110,6 @@ Known bugs;
 Debugging procedures;
 
   - The current max-width css rule for `canvas` html objects causes map overlays to not show. Query currently has a fix on it that allows it to work.
-
-### [pythreejs](https://github.com/jupyter-widgets/pythreejs)
-
-Known bugs;
- 
- - The first code block for pythreejs does not work, but the second one does (on [query libretexts](https://query.libretexts.org/Sandboxes/jupyterteam@ucdavis.edu)). Complex pythreejs code does not appear to work in thebe, ckeditor binder plugin, or on libretexts.
-
-Debugging procedures;
-
-  - TODO
 
 ## Widgets that work or have been fixed
 
