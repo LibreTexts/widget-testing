@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>thebe widget testing</title>
+
+  <!-- script that allows the line plots to be displayed, otherwise it gives an error -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+
+  <!-- Thebe configuration !-->
+  <script type="text/x-thebe-config">
+    {
+      binderOptions: {
+        repo: "LibreTexts/default-env",
+        ref: "2.3.2",
+        binderUrl: "https://binder.libretexts.org"
+      },
+      kernelOptions: {
+        name: "python3",
+      },
+      requestKernel: true,
+      bootstrap: true,
+    }
+  </script>
+
+  <!-- thebe javascript bundle -->
+  <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
+
+</head>
+
+<body>
+
+  <!-- source from https://github.com/jupyter-widgets/ipywidgets/blob/master/ipywidgets/widgets/widget_output.py -->
+  <pre data-executable="true" data-language="python">
+import ipywidgets as widgets
+from IPython.display import display
+out = widgets.Output()
+display(out)
+  </pre>
+
+  <pre data-executable="true" data-language="python">
+print('prints to output area')
+  </pre>
+
+  <pre data-executable="true" data-language="python">
+with out:
+    print('prints to output widget1')
+  </pre>
+
+  <pre data-executable="true" data-language="python">
+@out.capture()
+def func():
+    print('prints to output widget2')
+func()
+  </pre>
+
+  <pre data-executable="true" data-language="python">
+
+  </pre>
+
+  <pre data-executable="true" data-language="python">
+
+  </pre>
+
+  <pre data-executable="true" data-language="python">
+
+  </pre>
+
+</body>
+
+</html>
